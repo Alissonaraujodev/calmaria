@@ -7,16 +7,24 @@
     --cor2 : #FCD613 ;
     --cor3 : #115A2E;
 }
-header{
+main{
+    min-width: 300px;
+    max-width: 1000px;
+}
+header {
     text-align: center;
-    background-image: linear-gradient(to bottom, rgb(153, 21, 3) 20%,rgb(255, 255, 11) 50%);
+    background-image: linear-gradient(to bottom, var(--cor1)30%, var(--cor2), var(--cor3));
     color: white;
     padding: 10px;
+    margin: -10px -10px 0px -10px;
+}
+header>p{
+    text-align: center;
 }
 nav{
-    background-color: var(--cor2) ;
+    background-color: var(--cor3) ;
     padding: 10px;
-    
+    margin: 0px -10px 0px -10px;
 }
 nav>a{
     text-decoration: none;
@@ -30,21 +38,40 @@ nav>a:hover{
     padding: 10px;
     transition: 0.5s;
 }
-main>article{
-    width: 800px;
+main{
+    min-width: 300px;
+    max-width: 800px;
     margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;   
 }
-p{
-    text-align: justify;
-    text-indent: 30px;
-}footer{
-    background-color:rgb(6, 68, 6);
+#video{
+    position: relative;
+    padding-bottom:60%;
+}
+#video>iframe{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+}
+.imagens>img{
+    display: block;
+    margin: auto;
+   border-radius: 10px;
+}
+footer{
+    background-color:var(--cor3);
     color: white;
-    padding: 10px;   
+    padding: 10px; 
 }
 footer>p{
-    text-align: center;
-   
+    text-align: center;  
 }
 footer>p>a{
      text-decoration: none;
@@ -52,5 +79,5 @@ footer>p>a{
 }
 footer>p>a:hover{
     text-decoration: underline;
-    color:rgb(6, 163, 6) ;
+    color:var(--cor2) ;
 }
