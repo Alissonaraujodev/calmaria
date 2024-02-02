@@ -8,23 +8,31 @@
     --cor3 : #115A2E;
 }
 main{
-    min-width: 300px;
-    max-width: 1000px;
+    max-width: 90vw;
+    
 }
 header {
     text-align: center;
-    background-image: linear-gradient(to bottom, var(--cor1)30%, var(--cor2), var(--cor3));
+   
+   background-image: linear-gradient(to bottom, var(--cor1), var(--cor2), var(--cor3));
     color: white;
     padding: 10px;
-    margin: -10px -10px 0px -10px;
+    margin: 0px -5px 0px -5px;
 }
-header>p{
+header>p{ 
     text-align: center;
+    font-size: 1.5em;
+    text-shadow: 4px 4px 4px black
 }
+#logo{
+    border-radius: 30px;
+    width: 90vw;
+}
+
 nav{
     background-color: var(--cor3) ;
     padding: 10px;
-    margin: 0px -10px 0px -10px;
+    margin: 0px -5px 0px -5px;
 }
 nav>a{
     text-decoration: none;
@@ -49,9 +57,59 @@ main{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;   
 }
+h1{
+    font-size: 2.5em;
+    text-shadow: 4px 4px 4px black
+}
+h2{
+    font-size: 2em;
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3));
+    margin: 10px -20px;
+    padding: 8px;
+    color: white;
+    text-shadow: 4px 4px 4px black;
+    border-radius: 10px;
+    text-align: center;
+}
+p{
+    text-align: justify;
+    text-indent: 30px;
+}
+#fund{
+    border: 1px solid ;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+}
+.nomes{
+    padding-top: 10px;
+    text-align: center;   
+}
+#pres{
+    float: right;
+    width: 310px;
+    height: 480px;
+    border-radius: 30px;   
+}    
+#agra>p{
+    background-color: var(--cor3);
+    color: white;
+    padding: 65px 10px;
+    line-height: 1.5em;
+    text-align: justify;
+    text-indent: 30px;
+    border-radius: 30px;
+    height: 200px;
+    width: 290px ;
+}
 #video{
     position: relative;
     padding-bottom:60%;
+    background-image:linear-gradient(to bottom, var(--cor1), var(--cor2), var(--cor3));
+    margin: 0px -20px;
+    border-radius: 10px 10px 0px 0px ;
 }
 #video>iframe{
     position: absolute;
@@ -59,25 +117,51 @@ main{
     height: 90%;
     top: 5%;
     left: 5%;
+    border-radius:10px;
 }
 .imagens>img{
     display: block;
     margin: auto;
-   border-radius: 10px;
+    border-radius: 30px;
+}
+#uniformes{
+    border: 1px  black;
+    padding: 70px;
+    background-image: linear-gradient(to top,var(--cor1), var(--cor2), var(--cor3));
+    margin: 0px -20px;
+    border-radius: 0px 0px 10px 10px ;
+}
+#img-uni>img{
+    border-radius: 30px;
+    width: 230px;
+    height: 250px;
+    /*padding:0px 10px 0px 10px;*/
+}
+#jogos>p>a{
+    color: black;
+}
+#jogos>p>a:hover{
+    text-decoration: underline;
+    color: white;
+    background-color: var(--cor1);
+    padding: 5px;
+    border-radius: 10px;
+    transition: .5s;
 }
 footer{
     background-color:var(--cor3);
     color: white;
-    padding: 10px; 
+    padding: 10px;
+    margin: 0px -5px 0px -5px; 
 }
 footer>p{
-    text-align: center;  
+    text-align: center; font-size: 1.5em; 
 }
 footer>p>a{
      text-decoration: none;
-     color: white;
+     color: white;    
 }
 footer>p>a:hover{
     text-decoration: underline;
-    color:var(--cor2) ;
+    color:black ;
 }
