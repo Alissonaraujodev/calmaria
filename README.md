@@ -1,4 +1,4 @@
-# Calmaria Futsal: Página Web do Clube
+# Calmaria
 
 Este repositório é um projeto pessoal para a criação da página web do time de futsal "Calmaria". A ideia inicial é contar a história do clube e compartilhar seus objetivos com a comunidade, servindo como uma plataforma para divulgar a paixão pelo esporte e pelo time.
 
